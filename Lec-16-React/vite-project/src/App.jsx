@@ -1,47 +1,47 @@
-// import React from 'react'
-// import { createContext } from 'react'
-// import { useContext } from 'react';
-// const dataContext = createContext(0);
-// const App = () => {
-//   let data =5;
-//   return (
-//     <div>
-//       <h1>App component</h1>
-//       <dataContext.Provider value={data}>
-//           <Child1></Child1>
-//       </dataContext.Provider>
-//     </div>
-//   )
-// }
-// function Child1(){
-//   return(
-//     <div>
-//       <h1>Child One</h1>
-//       <Child2></Child2>
-//     </div>
-//   )
-// }
-// function Child2(){
+import React from 'react'
+import { createContext } from 'react'
+import { useContext } from 'react';
+const dataContext = createContext(0);
+const App = () => {
+  let data =5;
+  return (
+    <div>
+      <h1>App component</h1>
+      <dataContext.Provider value={data}>
+          <Child1></Child1>
+      </dataContext.Provider>
+    </div>
+  )
+}
+function Child1(){
+  return(
+    <div>
+      <h1>Child One</h1>
+      <Child2></Child2>
+    </div>
+  )
+}
+function Child2(){
   
-//   return(
-//     <div>
-//       <h1>Child Two</h1>
-//       <Child3></Child3>
+  return(
+    <div>
+      <h1>Child Two</h1>
+      <Child3></Child3>
       
-//     </div>
-//   )
-// }
-// function Child3(){
-//   const value = useContext(dataContext)
-//   return(
-//     <div>
-//       <h1>Child Three</h1>
-//       <h4>Data is {value}</h4>
-//     </div>
-//   )
-// }
+    </div>
+  )
+}
+function Child3(){
+  const value = useContext(dataContext)
+  return(
+    <div>
+      <h1>Child Three</h1>
+      <h4>Data is {value}</h4>
+    </div>
+  )
+}
 
-// export default App
+export default App
 
 
 
