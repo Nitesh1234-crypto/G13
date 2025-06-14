@@ -9,7 +9,7 @@ function fun(){
     // console.log(b);
 }
 fun();
-// console.log(d);
+// console.log(a);
 {
     var c=50;
     let x=10
